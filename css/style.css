@@ -1,0 +1,269 @@
+:root{
+    --cor-azul-escuro: #0055B7;
+    --cor-azul-medio: #0071F2;
+    --cor-clara: #F1F1F1;
+    --cor-escura: #010101;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-clara);
+    width: 1440px;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    height: 120px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: right;
+    align-items: right;
+    width: 65%;
+}
+
+nav a{
+    display: flex;
+    flex: column;
+    justify-content: right;
+    text-decoration: none;
+    color: var(--cor-clara);
+    margin: 0px 20% 0px 0px;
+}
+
+.container_1{
+    display: flex;
+    justify-content: space-around;
+    height: 32px;
+    width: 30%;
+    margin: 45px 0px 0px 3%;
+}
+
+.container_1 h2{
+    display: flex;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_2{
+    display: flex;
+    padding: 20px 0px 20px 5%;
+}
+
+.esquerda{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.titulo h1{
+    display: flex;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.titulo h3{
+    display: flex;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container_3{
+    display: flex;
+}
+
+.container_3 img{
+    display: flex;
+    align-items: baseline;
+    margin-top: 15px;
+    padding: 2px;
+    width: 62px;
+    height: 40px;
+    background-color: var(--cor-azul-escuro);
+}
+
+.container_3 img:hover{
+    cursor: pointer;
+    background-color: var(--cor-azul-medio);
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.pesquisa label{
+    display: flex;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.pesquisa input{
+    display: flex;
+    width: 306px;
+    padding: 10px;
+    outline: none;
+}
+
+.direita{
+    padding: 20px 10% 0px 10%;
+}
+
+.container_4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px var(--cor-azul-escuro) solid;
+    width: 400px;
+    height: 300px;
+    margin: 0px 30px 30px 0px;
+}
+
+.card h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cor-escura);
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--cor-clara);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Quicksand;
+    padding: 11px 105px 11px 105px;
+    background-color: var(--cor-azul-escuro);
+}
+
+.card a:hover{
+    background-color: var(--cor-azul-medio);
+}
+
+.professor{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px 0px 5px;
+}
+
+.professor h5{
+    color: var(--cor-azul-escuro);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Quicksand;
+}
+
+.professor p{
+    color: var(--cor-clara);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Quicksand;
+    padding:0px 8px 0px 8px;
+    background-color: var(--cor-azul-escuro);
+}
+
+.paginacao{
+    display: flex;
+    margin: 0 0 0px 5%;
+}
+
+.paginacao ol{
+    display: flex;
+}
+
+.paginacao li{
+    display: flex;
+    padding: 10px;
+    border: 1px var(--cor-azul-escuro) solid;
+    margin: 10px 10px 10px 0px;
+}
+
+.paginacao li:hover{
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-clara);
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #D9D9D9;
+    height: 200px;
+}
+
+.fslab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px var(--cor-clara);
+
+}
+
+.texto-fslab{
+    font-family: Quicksand;
+    font-size: 11px;
+    font-weight: 500;
+    width: 140px;
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--cor-escura);
+}
+
+.logo-fslab{
+    font-family: Quicksand;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: var(--cor-clara);
+    background-color: var(--cor-escura);
+    padding: 20px;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right;
+}
+
+.logo-ifro{
+    display: flex;
+
+}
